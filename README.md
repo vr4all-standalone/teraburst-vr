@@ -1,46 +1,29 @@
 <div align="center">
 
-## Downloads
-
-- [Quest APK](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-quest.apk)
-- [Windows PCVR](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-pcvr.zip)
-- [Complete matching source](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-source.zip)
-- [SHA256 checksums](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/SHA256SUMS.txt)
-
-Supply your own supported game files. The named source download includes the port, full pinned MAME bundle, patches and dependency sources. GitHub's automatic source ZIP contains this project page.
-
-
-<!-- overseer-20261028-update -->
-Prepared version **0.1.1**, Android code **3**. Publication of this update is being prepared; this text does not claim it has been published.
-
-The Quest setup screen now uses the wide purple VR4ALL launch panel, with file/access status, help and a manual **Play** button. It enters VR automatically once the real game-file checks pass; returning from Quit or an error leaves Play available without a duplicate automatic launch.
-
-The Arcade gun's body and complete grip follow logical player identity across hand swaps: P1 blue / P2 red for Teraburst. Grey screws, metal and lens details keep their original materials; other gun choices retain their appearance. Displayed **Gun angle** is -30..30 degrees in one-degree steps. New displayed 0 uses the old physical -10-degree pose consistently for the model, muzzle, laser, aiming and menu pointer. Every legacy saved angle resets to displayed 0 once; a persistent migration marker preserves later adjustments and other saved preferences.
-
-This update has fresh software tests and Windows/Quest builds. Its APK was installed in place and matched the candidate hash; the new setup, colors and angle behavior have not been physically observed in a headset. Earlier accepted gameplay features remain separate historical evidence.
-
-Complete matching source is `teraburst-vr-source.zip`, including the pinned MAME bundle, full patch stack, exact SDL/OpenXR sources, manifests and licenses. See [build instructions](docs/BUILD.md) and [this update](docs/release-notes-0.1.1.md).
-<!-- /overseer-20261028-update -->
-
-<img src="docs/github/readme-banner.png" alt="Teraburst VR — standalone Meta Quest and PC VR" width="100%" />
+<img src="docs/github/readme-banner.png" alt="Teraburst VR — original game artwork, standalone Meta Quest and PC VR" width="100%" />
 
 # Teraburst VR
 ### Konami Hornet Light-Gun Action · Standalone Meta Quest & PC VR
 
-[![Release v0.1.0](https://img.shields.io/badge/Release-v0.1.0-brightgreen?style=for-the-badge)](https://github.com/vr4all-standalone/teraburst-vr/releases/latest)
+[![Release v0.1.1](https://img.shields.io/badge/Release-v0.1.1-brightgreen?style=for-the-badge)](https://github.com/vr4all-standalone/teraburst-vr/releases/latest)
 [![Quest and PC VR](https://img.shields.io/badge/Headset-Quest_3_%2F_3S_%C2%B7_PC_VR_OpenXR-blue?style=for-the-badge)](#installation-meta-quest)
-[![Original arcade game required](https://img.shields.io/badge/Your_Game-terabrst_US_UEL-orange?style=for-the-badge)](#your-game-files)
+[![Original arcade game required](https://img.shields.io/badge/Your_Game-terabrst%20US%20UEL-orange?style=for-the-badge)](#your-game-files)
 
 **[⬇️ Quest APK](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-quest.apk)** · **[🖥️ PC VR ZIP](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-pcvr.zip)** · **[🎮 Controls](#controls)**
 
 [Checksums](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/SHA256SUMS.txt) · [Complete source](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-source.zip) · [All releases](https://github.com/vr4all-standalone/teraburst-vr/releases)
 
-**[🌐 VR4ALL — Standalone VR Mod Installer](https://github.com/vr4all-standalone/vr4all-standalone-vr-mod-installer)**
+**[🌐 VR4ALL — Standalone VR Mod Installer](https://github.com/vr4all-standalone/vr4all-standalone)**
 
 </div>
 
 ---
 
+## Update v0.1.1
+
+- Shared wide VR4ALL setup panel, with validated automatic entry and manual Play.
+- Full player-colored Arcade body and grip, with original grey screws and lens details. Teraburst retains P1 blue / P2 red.
+- New gun angle 0 matches the old -10-degree pose. Legacy angles reset once; later choices and other settings persist.
 
 ## Overview
 
