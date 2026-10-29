@@ -1,23 +1,30 @@
-![Teraburst VR — standalone Meta Quest and PC VR](docs/github/readme-banner.png)
+<div align="center">
+
+<img src="docs/github/readme-banner.png" alt="Teraburst VR — standalone Meta Quest and PC VR" width="100%" />
 
 # Teraburst VR
+### Konami Hornet Light-Gun Action · Standalone Meta Quest & PC VR
+
+[![Release v0.1.0](https://img.shields.io/badge/Release-v0.1.0-brightgreen?style=for-the-badge)](https://github.com/vr4all-standalone/teraburst-vr/releases/latest)
+[![Quest and PC VR](https://img.shields.io/badge/Headset-Quest_3_%2F_3S_%C2%B7_PC_VR_OpenXR-blue?style=for-the-badge)](#installation-meta-quest)
+[![Original arcade game required](https://img.shields.io/badge/Your_Game-terabrst_US_UEL-orange?style=for-the-badge)](#your-game-files)
+
+**[⬇️ Quest APK](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-quest.apk)** · **[🖥️ PC VR ZIP](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-pcvr.zip)** · **[🎮 Controls](#controls)**
+
+[Checksums](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/SHA256SUMS.txt) · [Complete source](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-source.zip) · [All releases](https://github.com/vr4all-standalone/teraburst-vr/releases)
+
+**[🌐 VR4ALL — Standalone VR Mod Installer](https://github.com/vr4all-standalone/vr4all-standalone-vr-mod-installer)**
+
+</div>
+
+---
+
+
+## Overview
 
 **Konami's alien-invasion lightgun arcade game, rebuilt for stereo VR with tracked guns.** Play on standalone **Meta Quest 3 / 3S** or **Windows PC VR through OpenXR**. The world uses the game's original submitted Voodoo geometry; the arcade HUD remains a separate layer.
 
-[**Download the latest release**](https://github.com/vr4all-standalone/teraburst-vr/releases/latest) · [Setup and controls](#getting-started) · [Buildable source](#status-and-source-code) · [Validation](docs/TESTING.md)
-
-## Downloads
-
-| Platform | Download |
-| --- | --- |
-| Meta Quest 3 / 3S | [teraburst-vr-quest.apk](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-quest.apk) |
-| Windows PC VR / OpenXR | [teraburst-vr-pcvr.zip](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-pcvr.zip) |
-| Complete matching source | [teraburst-vr-source.zip](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-source.zip) |
-| Download verification | [SHA256SUMS.txt](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/SHA256SUMS.txt) |
-
-**Bring your own game data. No ROMs, CHDs or extracted game assets are included.** The supported set is **Teraburst, July 17, 1998 US UEL**, MAME short name **`terabrst`**. It needs the complete validated `terabrst.zip`; **no CHD or separate BIOS is required**. Renaming a `.7z` file to `.zip` will not work.
-
-## What's included
+## Key VR Features
 
 - Native stereo 3D scenery with independent **World size**, **3D strength** and **Stereo separation** controls.
 - Tracked guns and scenery-aware lasers, with the original reticles placed at the physical 3D hit point.
@@ -30,9 +37,20 @@
 
 The FPS display is **Off** for normal play. Preview installations migrate the temporary overlay off while keeping saved calibration and controls. Detailed support logs remain available, and the counter can be enabled manually in settings.
 
-## Getting started
+## Downloads
 
-### Meta Quest
+| Platform | Download |
+| --- | --- |
+| Meta Quest 3 / 3S | [teraburst-vr-quest.apk](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-quest.apk) |
+| Windows PC VR / OpenXR | [teraburst-vr-pcvr.zip](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-pcvr.zip) |
+| Complete matching source | [teraburst-vr-source.zip](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-source.zip) |
+| Download verification | [SHA256SUMS.txt](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/SHA256SUMS.txt) |
+
+## Your Game Files
+
+**Bring your own game data. No ROMs, CHDs or extracted game assets are included.** The supported set is **Teraburst, July 17, 1998 US UEL**, MAME short name **`terabrst`**. It needs the complete validated `terabrst.zip`; **no CHD or separate BIOS is required**. Renaming a `.7z` file to `.zip` will not work.
+
+## Installation (Meta Quest)
 
 1. Install `teraburst-vr-quest.apk` with your usual sideloading tool or ADB.
 2. Put your complete **`terabrst.zip`** in the headset's **Download** folder.
@@ -42,7 +60,7 @@ The FPS display is **Off** for normal play. Preview installations migrate the te
 
 An update installs over the preview with the same signing identity and preserves game data, saves and preferences. Exit normally to save native clock/operator state.
 
-### Windows PC VR
+## Installation (PC VR)
 
 1. Extract `teraburst-vr-pcvr.zip`.
 2. Put the owned **`terabrst.zip`** in a **`roms`** folder beside the launcher.
@@ -65,17 +83,17 @@ For another game-file folder, run `launch-pcvr.ps1 -RomDirectory PATH`. The laun
 
 Once paired, Start follows the selected player-hand layout. The default is **P1 left / P2 right**; the opposite layout and Solo are available. An automatic join layout is session-only; an explicitly chosen layout is saved. Teraburst has native bombs and continuous fire; no offscreen reload is invented.
 
-### 3D settings
+## 3D Settings and Known Limits
 
 **Stereo 3D** is the default background. **Original** presents the native raster on a panel. A useful tested profile is **3D strength 1.75x** and **Stereo separation 1.5x**, with the normal world-size setting. Existing preferences are retained. Strength defaults to 1.5x and separation to 1x for fresh installs; increase them to taste.
 
 World size, depth and disparity are separate controls. Very strong separation can suggest miniature scale or apparent scene motion. The native tile HUD, boot screens and operator menus remain flat. The game only supplies scenery from its arcade camera: leaning outside it can expose gaps, and wider view is unavailable.
 
-### Service controls
+## Service Controls
 
 Routine startup is automatic. For operator settings, use **Open Service Menu**. The stick sends Start1/Start2 for up/down, trigger selects, and B/Y sends Test. Choose the arcade's **GAME MODE** when needed, then **Leave service controls** in VR settings. A stick click switches operator-menu controls to gun-test aiming.
 
-## Status and source code
+## Source and Credits
 
 **v0.1.0 is the first public release.** The user has confirmed improved Quest 3S FPS/audio, stereo depth, gun alignment, lasers/reticles, automatic fire/haptics and player joining. Full routes, every boss and all headset/controller combinations have not been exhaustively tested. Upstream MAME still marks Teraburst `MACHINE_NOT_WORKING` and `MACHINE_IMPERFECT_SOUND`; occasional original emulation faults remain possible. See [validation](docs/TESTING.md).
 
