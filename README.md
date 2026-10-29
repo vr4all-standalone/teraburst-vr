@@ -1,5 +1,27 @@
 <div align="center">
 
+## Downloads
+
+- [Quest APK](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-quest.apk)
+- [Windows PCVR](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-pcvr.zip)
+- [Complete matching source](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/teraburst-vr-source.zip)
+- [SHA256 checksums](https://github.com/vr4all-standalone/teraburst-vr/releases/latest/download/SHA256SUMS.txt)
+
+Supply your own supported game files. The named source download includes the port, full pinned MAME bundle, patches and dependency sources. GitHub's automatic source ZIP contains this project page.
+
+
+<!-- overseer-20261028-update -->
+Prepared version **0.1.1**, Android code **3**. Publication of this update is being prepared; this text does not claim it has been published.
+
+The Quest setup screen now uses the wide purple VR4ALL launch panel, with file/access status, help and a manual **Play** button. It enters VR automatically once the real game-file checks pass; returning from Quit or an error leaves Play available without a duplicate automatic launch.
+
+The Arcade gun's body and complete grip follow logical player identity across hand swaps: P1 blue / P2 red for Teraburst. Grey screws, metal and lens details keep their original materials; other gun choices retain their appearance. Displayed **Gun angle** is -30..30 degrees in one-degree steps. New displayed 0 uses the old physical -10-degree pose consistently for the model, muzzle, laser, aiming and menu pointer. Every legacy saved angle resets to displayed 0 once; a persistent migration marker preserves later adjustments and other saved preferences.
+
+This update has fresh software tests and Windows/Quest builds. Its APK was installed in place and matched the candidate hash; the new setup, colors and angle behavior have not been physically observed in a headset. Earlier accepted gameplay features remain separate historical evidence.
+
+Complete matching source is `teraburst-vr-source.zip`, including the pinned MAME bundle, full patch stack, exact SDL/OpenXR sources, manifests and licenses. See [build instructions](docs/BUILD.md) and [this update](docs/release-notes-0.1.1.md).
+<!-- /overseer-20261028-update -->
+
 <img src="docs/github/readme-banner.png" alt="Teraburst VR — standalone Meta Quest and PC VR" width="100%" />
 
 # Teraburst VR
@@ -95,7 +117,7 @@ Routine startup is automatic. For operator settings, use **Open Service Menu**. 
 
 ## Source and Credits
 
-**v0.1.0 is the first public release.** The user has confirmed improved Quest 3S FPS/audio, stereo depth, gun alignment, lasers/reticles, automatic fire/haptics and player joining. Full routes, every boss and all headset/controller combinations have not been exhaustively tested. Upstream MAME still marks Teraburst `MACHINE_NOT_WORKING` and `MACHINE_IMPERFECT_SOUND`; occasional original emulation faults remain possible. See [validation](docs/TESTING.md).
+**v0.1.0 was the first public release; this package prepares v0.1.1 (Android code3).** In the earlier accepted release, the user confirmed improved Quest 3S FPS/audio, stereo depth, gun alignment, lasers/reticles, automatic fire/haptics and player joining. Full routes, every boss and all headset/controller combinations have not been exhaustively tested. Upstream MAME still marks Teraburst `MACHINE_NOT_WORKING` and `MACHINE_IMPERFECT_SOUND`; occasional original emulation faults remain possible. See [validation](docs/TESTING.md).
 
 This repository is the project/download page. The **complete matching buildable source is the release's `teraburst-vr-source.zip`**, including the port, 16 engine patches, a full Git bundle for pinned MAME 0.289 commit `f34f02505e32c1993c6a782b6814232cbfc74e36`, exact SDL/OpenXR dependency sources, SHA256 manifests and notices. GitHub's automatic repository ZIP contains this project page; use the named source asset to build the mod.
 
