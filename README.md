@@ -5,6 +5,8 @@
 # Teraburst VR
 ### Konami Hornet Light-Gun Action · Standalone Meta Quest & PC VR
 
+[☕ Donate to VR4ALL](https://ko-fi.com/vr4all)
+
 [![Release v0.1.2](https://img.shields.io/badge/Release-v0.1.2-brightgreen?style=for-the-badge)](https://github.com/vr4all-standalone/teraburst-vr/releases/latest)
 [![Quest and PC VR](https://img.shields.io/badge/Headset-Quest_3_%2F_3S_%C2%B7_PC_VR_OpenXR-blue?style=for-the-badge)](#installation-meta-quest)
 [![Original arcade game required](https://img.shields.io/badge/Your_Game-terabrst%20US%20UEL-orange?style=for-the-badge)](#your-game-files)
