@@ -5,7 +5,7 @@
 # Teraburst VR
 ### Konami Hornet Light-Gun Action · Standalone Meta Quest & PC VR
 
-[![Release v0.1.1](https://img.shields.io/badge/Release-v0.1.1-brightgreen?style=for-the-badge)](https://github.com/vr4all-standalone/teraburst-vr/releases/latest)
+[![Release v0.1.2](https://img.shields.io/badge/Release-v0.1.2-brightgreen?style=for-the-badge)](https://github.com/vr4all-standalone/teraburst-vr/releases/latest)
 [![Quest and PC VR](https://img.shields.io/badge/Headset-Quest_3_%2F_3S_%C2%B7_PC_VR_OpenXR-blue?style=for-the-badge)](#installation-meta-quest)
 [![Original arcade game required](https://img.shields.io/badge/Your_Game-terabrst%20US%20UEL-orange?style=for-the-badge)](#your-game-files)
 
@@ -19,7 +19,7 @@
 
 ---
 
-## Update v0.1.1
+## Update v0.1.2
 
 - Shared wide VR4ALL setup panel, with validated automatic entry and manual Play.
 - Full player-colored Arcade body and grip, with original grey screws and lens details. Teraburst retains P1 blue / P2 red.
@@ -100,7 +100,7 @@ Routine startup is automatic. For operator settings, use **Open Service Menu**. 
 
 ## Source and Credits
 
-**v0.1.0 was the first public release; this package prepares v0.1.1 (Android code3).** In the earlier accepted release, the user confirmed improved Quest 3S FPS/audio, stereo depth, gun alignment, lasers/reticles, automatic fire/haptics and player joining. Full routes, every boss and all headset/controller combinations have not been exhaustively tested. Upstream MAME still marks Teraburst `MACHINE_NOT_WORKING` and `MACHINE_IMPERFECT_SOUND`; occasional original emulation faults remain possible. See [validation](docs/TESTING.md).
+**v0.1.0 was the first public release; this package prepares v0.1.2 (Android code3).** In the earlier accepted release, the user confirmed improved Quest 3S FPS/audio, stereo depth, gun alignment, lasers/reticles, automatic fire/haptics and player joining. Full routes, every boss and all headset/controller combinations have not been exhaustively tested. Upstream MAME still marks Teraburst `MACHINE_NOT_WORKING` and `MACHINE_IMPERFECT_SOUND`; occasional original emulation faults remain possible. See [validation](docs/TESTING.md).
 
 This repository is the project/download page. The **complete matching buildable source is the release's `teraburst-vr-source.zip`**, including the port, 16 engine patches, a full Git bundle for pinned MAME 0.289 commit `f34f02505e32c1993c6a782b6814232cbfc74e36`, exact SDL/OpenXR dependency sources, SHA256 manifests and notices. GitHub's automatic repository ZIP contains this project page; use the named source asset to build the mod.
 
